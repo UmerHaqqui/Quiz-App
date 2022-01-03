@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #007bff;
+}
+.start_btn,
+.info_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* start button styling */
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    border: none;
+    padding: 15px 30px;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info_box{
+    display: none;
+    width: 540px;
+    /* height: auto; */
+    background: #fff;
+    border-radius: 5px;
+
+}
+.info_box .info_title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.info_box .info_list{
+    padding: 15px 35px;
+}
+.info_box .info_list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.info_box .info_list .info span{
+    font-weight: 600;
+    color: #007bff;
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgray;
+}
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #007bff;
+    /* background-color: #007bff; */
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttons button.restart{
+    color: #fff;
+    background:#007bff;
+}
+.buttons button.restart:hover{
+    background-color: #0263ca;
+}
+.buttons button.quit:hover{
+    color: #fff;
+    background:#007bff;
+}
+.buttons button.quit{
+    color: #007bff;
+    border-color:#007bff;
+}
